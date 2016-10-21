@@ -1,9 +1,34 @@
 body {
+  margin: 0;
   font-family: 'avenir next';
   text-align: center;
 }
 .rounded {
   border-radius: 3px;
+}
+.fading {
+  transition: opacity 0.3s;
+}
+.invisible {
+  opacity: 0 !important;
+  pointer-events: none;
+}
+.modal {
+  opacity: 1;
+  z-index: 999;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(200,200,200,0.5);
+}
+#request-form {
+  position: relative;
+  width: 450px;
+  height: 600px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
 }
 .toolbar {
   padding: 10px;

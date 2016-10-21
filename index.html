@@ -2,7 +2,10 @@
   <link rel="stylesheet" href="main.css" />
 </head>
 <body>
-  <div class="toolbar">
+  <div id="modal-bg" class="rounded fading invisible modal">
+    <div id="request-form">Request Form!</div>
+  </div>
+  <div id="nav" class="toolbar">
     <a>Events</a>
     <a>Home</a>
     <a>Lessons</a>
@@ -19,11 +22,13 @@
         </div>
       </div>
       <div class="header-right">
-        <div class="rounded sidebox">
+        <div id="sidebox" class="rounded sidebox">
           <p>Get up to five quotes from pros like KeepBrausenWest Photography within hours.</p>
-          <div class="rounded button">Get Quotes</div>
+          <div id="get-quotes" class="rounded button">Get Quotes</div>
         </div>
       </div>
     </div>
   </div>
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+  <script src="app.js"></script>
 </body>
