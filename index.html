@@ -2,8 +2,18 @@
   <link rel="stylesheet" href="main.css" />
 </head>
 <body>
-  <div id="modal-bg" class="rounded fading invisible modal">
-    <div id="request-form">Request Form!</div>
+  <div id="modal-bg" class="fading invisible modal" ng-app="requestForm">
+    <div id="request-form" class="rounded">Request Form!
+      <progress-bar max="5"></progress-bar>
+      <select ng-model="progress">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
   </div>
   <div id="nav" class="toolbar">
     <a>Events</a>
@@ -29,6 +39,7 @@
       </div>
     </div>
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.1.2/angular.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
   <script src="app.js"></script>
 </body>
